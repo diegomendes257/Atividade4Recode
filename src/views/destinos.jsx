@@ -1,10 +1,12 @@
 import React from "react";
+import Descricao from "../components/Descricao";
 
 export default function destinos(){
     return(
         <>
-            <h2>Destinos</h2>
-            <h3>venha ver ocmo é </h3>
+            <Descricao nome={"Destino"} descricao={"Escolha os destinos que você mais gosta!"} />
+            <div>
+            </div>
         </>
     );
 }

@@ -7,7 +7,9 @@ import Promocoes from "./views/promocoes";
 import Contato from "./views/contato";
 import Header from "./components/Header";
 import Footer from "./components/footer";
-import Cards from "./components/Cards";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Sobre from "./views/Sobre";
+
 
 function App(){
   return (
@@ -18,6 +20,7 @@ function App(){
         <Route path="/destinos" element={<Destinos/>} />
         <Route path="/promocoes" element={<Promocoes/>} />
         <Route path="/contato" element={<Contato/>} />
+        <Route path="/sobre" element={<Sobre/>} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -2,12 +2,11 @@ import React from "react";
 
 export default function footer(){
     return(
-        <>
             <div className="footer">
                 <div className="logo-footer">
                     <img src="../img/Logo.png" alt="Logo Três Carneiros Viagens"  title="Três Carneiros Viagens" />
                 </div>
-                <div>
+                <div className="textoFooter">
                     © 2022 Copyright - Todos os direitos reservados. Três Carneiros Viagens - RecodePRO
                 </div>
                 <div className="footer-redes">
@@ -17,6 +16,5 @@ export default function footer(){
                     <img src="../img/linkedin.png" alt="" />
                 </div>
             </div>
-        </>
     );
 }

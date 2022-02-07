@@ -1,30 +1,26 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Descricao from "../components/Descricao";
 
 export default function contato(){
     return(
-        <div class="caixaMaior">
-			<section class="secao">
-				<h1 class="nomeTextoContato">Contato</h1>
+		<>
+			<div class="boxPrincipalContato">
 
-				<div class="fundo-contato">
-				    <div class="text-white">
-				        <h2 class="display-5">Entre em contato conosco pelos canais abaixo.</h2>
-				        <p class="display-5">Telefone:<br />
-				        (81) 9 8888-9999<br />
-				        E-mail: trescarneirosviagens@recodepro.com<br />
-				        </p>
-
-				    </div>
-				</div>
-				<div>
-					<div>
-						
+				<section class="secaoContato">
+					<h1 class="nomeTextoContato">Contato</h1>
+					<div class="fundo-contato">
+							<h2>Entre em contato conosco pelos canais abaixo.</h2>
+							<p>Telefone:<br />
+							(81) 9 8888-9999<br />
+							E-mail: trescarneirosviagens@recodepro.com <br />
+							Site desenvolvido por: Diego Mendes da silva <br />
+							Squad 5 - Diego Mendes, Verônica, Ryan, Mariana, Jessica.
+							<Link to="/Sobre">SOBRE</Link>
+							</p>
 					</div>
-					<form>
-						
-					</form>
-				</div>
-			</section>
-		</div>
+				</section>
+			</div>
+		</>
     );
 }

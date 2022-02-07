@@ -27,7 +27,7 @@
 	width: 200px;
 }
 
-.menu{
+#menu{
 	display: flex;
 	width: 550px;
 	justify-content: space-around;
@@ -92,12 +92,14 @@
 
 .secao{
 	width: 100%;
-	height: 700px;
+	height: auto;
 	background-image: url(../img/img-index-mar.jpg);
-	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-bottom: 50px;
 }
 
 .caixaLogo{
@@ -106,6 +108,13 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.caixaLogo figure{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 15px;
 }
 
 .mensagemIndex{
@@ -122,8 +131,7 @@
 }
 
 .blocoIndexForm{
-	margin-top: 45px;
-	height: 400px;
+	height: auto;
 	width: 1050px;
 }
 
@@ -195,7 +203,7 @@
 
 .secaoCards{
 	width: 100%;
-	height: 800px;
+	height: auto;
 	background-image: linear-gradient(to top, #61C2FF, #3896C7);
 	display: flex;
 	flex-direction: column;
@@ -205,25 +213,27 @@
 
 .textoCimaCard p{
 	color: yellow;
-	font-size: 50px;
+	font-size: 45px;
 	font-family: 'franklin-gothic-medium-cond';
 	text-align: center;
-	margin-bottom: 25px;
 	text-shadow: 1px 1px 3px blue;
+	padding-top: 35px;
 }
 
 .hr{
 	background-image: linear-gradient(to right, yellow, blue);
 	border-style: none;
 	height: 2px;
+	width: 100%;
 }
 
 .boxCard{
 	display: flex;
-	width: 1200px;
-	height: 600px;
+	width: 100%;
+	height: auto;
 	justify-content: center;
 	flex-wrap: wrap;
+	padding-bottom: 35px;
 }
 
 .card{
@@ -256,12 +266,14 @@
 }
 
 .footer{
-	height: 100px;
+	height: auto;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	background-image: linear-gradient(to top, #0367a6, #07578a);
 	color: #f2da05;
+	flex-wrap: wrap;
+	padding: 10px;
 }
 
 .logo-footer img{
@@ -272,14 +284,30 @@
 	margin: 10px;
 }
 
+.textoFooter{
+	font-size: 10pt;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
 
 /*------------------------- PÁGINA CONTATO -----------------------------*/
+.secaoContato{
+	height: 300;
+	background-color: #1885c4;
+	border: 1px rgb(114, 8, 8) solid;
+	text-align: center;
+}
 
-
+.boxPrincipalContato{
+	background-color: #58ac32;
+	text-align: center;
+}
 
 .fundo-contato{
-	width: 80%;
-	height: 20%;
 	font-size: 20pt;
 	color: white;
 	text-align: center;
@@ -291,9 +319,40 @@
 	margin-top: 60px;
 }
 
-.text-white{
-	color:white;
+
+
+
+
+
+/*------------------------- PÁGINA SOBRE -----------------------------*/
+
+.descricao{
+	width: 300;
+	background-color: white;
+	padding: 50px;
 }
+
+.linkPagina{
+	margin-bottom: 50px;
+}
+
+.linkPagina p{
+	font-family: 'Times New Roman', Times, serif
+}
+
+
+
+
+
+
+
+/*------------------------- PÁGINA CONTATO -----------------------------*/
+
+
+
+
+
+
 
 /*------------------------- PÁGINA ENTRAR ------------------------------*/
 
@@ -324,4 +383,119 @@
 	font-family: 'franklin-gothic-medium-cond';
 	text-align: center;
 
+}
+
+
+
+
+
+
+
+/*  sm  */
+@media (max-width: 575.98px) { 
+
+	.caixaHeader{
+		display: inline;
+		background-image: linear-gradient(to top, #0367a6, #07578a);
+		height: auto;
+	}
+
+	.linkMenu>*{
+		font-size: 15px;
+		color: #07578a;
+	}
+
+	.linkMenu{	
+		width: 100%;
+	}
+
+	.mensagemIndex p{
+		font-size: 25pt;
+		letter-spacing: 10px;
+	}
+
+	.blocoIndexForm{
+		height: auto;
+		width: 100%;
+		display: inline;
+	}
+
+	.footer{
+		padding: 30px;
+	}
+
+	.logo-footer img{
+		width: 200px;
+	}
+
+	.textoFooter{
+		padding: 30px;
+		text-align: center;
+	}
+}
+
+
+
+/* md - Dispositivos small (telefones em modo paisagem, com menos de 768px)  */
+@media (max-width: 767.98px) { 
+
+	.caixaLogo{
+		width: 100%;
+		background-image: linear-gradient(to top, #0367a6, #07578a);
+	}
+
+	.linkMenu{	
+		width: 100%;
+	}
+
+	.linkMenu>*{
+		font-size: 15px;
+	}
+
+	.blocoIndexForm{
+		height: auto;
+		width: 100%;
+		display: inline;
+	}
+	
+	.footer{
+		padding: 30px;
+	}
+
+	.logo-footer img{
+		width: 200px;
+	}
+
+	.textoFooter{
+		padding: 30px;
+		text-align: center;
+	}
+
+}
+
+
+
+/* lg - Dispositivos médios (tablets com menos de 992px)  */
+@media (max-width: 991.98px) {
+	.caixaHeader{
+		background-image: linear-gradient(to top, #0367a6, #07578a);
+	}
+
+	.blocoIndexForm{
+		height: auto;
+		width: 100%;
+		display: inline;
+	}
+
+	.textoFooter{
+		padding: 30px;
+	}
+
+}
+
+
+
+/* xl - Dispositivos large (desktops com menos de 1200px)  */
+@media (max-width: 1199.98px) {
+	
 }
